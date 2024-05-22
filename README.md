@@ -162,7 +162,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart 0gchaind
 ```
 
-## 🧑🏻‍💻 Log
+## 🧑🏻‍💻 Log kontrolü
 
 ```shell
 sudo journalctl -u 0gchaind.service -f --no-hostname -o cat
@@ -204,7 +204,7 @@ echo "0x$(0gchaind debug addr $(0gchaind keys show CÜZDAN-ADINI-YAZ -a) | grep 
 
 
 
-## 🧑🏻‍💻 Validatör oluşturun ( Moniker yani görünen isminizi yazın ve cüzdan ismini yazın
+## 🧑🏻‍💻 Validatör oluşturun (moniker: validatör adınızı yazacaksınız, ''CÜZDAN-ADI-YAZ'' kısmınada ilk key'leri aldığınız cüzdan adınızı yazacaksınız)
 
 ```shell
 0gchaind tx staking create-validator \
@@ -250,7 +250,7 @@ echo "0x$(0gchaind debug addr $(0gchaind keys show CÜZDAN-ADINI-YAZ -a) | grep 
 | sort -gr | nl
 ```
 
-## 🧑🏻‍💻 inAktif listeye bakma
+## 🧑🏻‍💻 inaktif listeye bakma
 
 ```shell
 0gchaind q staking validators -o json --limit=1000 \
@@ -265,7 +265,7 @@ echo "0x$(0gchaind debug addr $(0gchaind keys show CÜZDAN-ADINI-YAZ -a) | grep 
 0gchaind q bank balances $(0gchaind keys show CUZDAN-ADINIZ -a)
 ```
 
-## 🧑🏻‍💻 VAlidatör bilgilerine bakma duruma bakma
+## 🧑🏻‍💻 Validatör bilgilerine bakma duruma bakma
 
 ```shell
 0gchaind q staking validator $(0gchaind keys show CUZDAN-ADINIZ --bech val -a)
