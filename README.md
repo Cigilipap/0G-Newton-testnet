@@ -2,7 +2,7 @@
 
 
 
-### Linkler
+### Linkler 
  * [0xTuylubamya Twitter]( https://twitter.com/Herculesnode](https://x.com/0xTuylubamya )
  * [OG Discord](https://discord.gg/0glabs)
 
